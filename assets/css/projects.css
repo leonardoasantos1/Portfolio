@@ -1,0 +1,134 @@
+/* Seção de cartões informativos */
+.info-cards-section {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Estilo dos cards */
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #fff; 
+}
+
+/* Estilo para as imagens */
+.info-card-image img {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 1px;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+/* Conteúdo do card */
+.info-card-content {
+    flex: 1;
+    max-width: 450px;
+    text-align: left; 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* Títulos */
+.info-card-content h2 {
+    font-size: 1.6rem;
+    color: #333; 
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Descrição */
+.info-card-content p {
+    font-size: 1rem;
+    color: #666; 
+    margin-bottom: 15px;
+}
+
+/* Lista */
+.info-card-content ul {
+    list-style-type: none; 
+    padding-left: 0;
+    margin-bottom: 15px;
+}
+
+/* Itens da lista */
+.info-card-content li {
+    font-size: 1rem;
+    color: #888; 
+    margin-bottom: 5px;
+}
+
+/* Botão */
+.info-card-btn {
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    margin-top: 15px;
+}
+
+.info-card-btn:hover {
+    background-color: #555; 
+}
+
+.vertical-line {
+    height: 250px;
+}
+
+.projects-github {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.projects-github a {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #262626;
+    transition: .3s ease-in-out;
+}
+
+.projects-github a:hover {
+    transform: scale(1.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .info-card {
+        flex-direction: column;
+        text-align: center; 
+        gap: 15px;
+    }
+
+    /* Alterando a ordem dos elementos nos cards 2 e 4 */
+    .info-card:nth-child(2) .info-card-image,
+    .info-card:nth-child(4) .info-card-image {
+        order: 1;
+    }
+
+    .info-card:nth-child(2) .info-card-content,
+    .info-card:nth-child(4) .info-card-content {
+        order: 2;
+    }
+
+    .info-card-content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .info-card-image img {
+        width: 300px;
+        height: 300px;
+    }
+}

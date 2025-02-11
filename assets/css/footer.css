@@ -1,0 +1,71 @@
+/* Estilo geral do footer */
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* Container do footer */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Colunas do footer */
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: start;
+}
+
+/* Estilo para a coluna de navegação */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #262626;
+}
+
+/* Estilo para a coluna de informações */
+.footer-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer-info span {
+    color: #04276d;
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav ul {
+        text-align: center;
+    }
+
+    .footer-nav li {
+        margin-bottom: 15px;
+    }
+}

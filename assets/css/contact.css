@@ -1,0 +1,78 @@
+/* Estilo geral da seção de contato */
+.contact-section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Título da seção */
+.contact-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Descrição */
+.contact-section p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilo geral do formulário */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Estilo para os grupos de entrada */
+.form-group {
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Estilo dos rótulos */
+.form-group label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Estilo para os campos de entrada */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Estilo do campo de texto */
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Foco nos campos de entrada */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #000;
+}
+
+/* Estilo do botão */
+.contact-form button {
+    border: none;
+}

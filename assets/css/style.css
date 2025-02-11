@@ -1,0 +1,30 @@
+@import url('buttonFixed.css'); 
+@import url('footer.css'); 
+@import url('header.css'); 
+@import url('hero.css');
+@import url('about.css');
+@import url('projects.css');
+@import url('contact.css');
+@import url('skills.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+:root {
+    --background-color: #fff;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-family: "Rajdhani", sans-serif;
+    color: var(--cor-texto-principal); 
+    background-color: var(--cor-fundo-principal);
+}

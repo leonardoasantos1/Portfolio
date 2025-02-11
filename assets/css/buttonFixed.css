@@ -1,0 +1,37 @@
+/*ícone fixo do WhatsApp*/
+#whatsapp-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 50px;
+    color: #666;
+    transition: 0.3s ease;
+    z-index: 2;
+}
+
+#whatsapp-icon:hover {
+    transform: scale(1.2); 
+}
+
+/* botao para subir o scroll */
+#backToTop {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    font-size: 50px;
+    color: #666;
+    transition: 0.3s ease;
+    cursor: pointer;
+    display: none;
+}
+
+#backToTop:hover {
+    transform: scale(1.1);
+}
+
+/* Resposividade */
+@media (max-width: 768px) {
+    #backToTop {
+        font-size: 40px;
+    }
+}

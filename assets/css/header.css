@@ -1,0 +1,137 @@
+/* Header Principal */
+.header {
+    width: 100%; 
+    height: 100vh;
+    position: absolute;
+}
+
+/* Menu de Navegação */
+.header-nav {
+    width: 100%; 
+    height: 100vh; 
+    background-color: rgba(255, 255, 255, .8);
+    backdrop-filter: blur(5px);
+    z-index: 3;
+    position: fixed; 
+    top: -100vh; 
+    transition: all 0.6s ease-in-out;
+}
+
+/* Menu Ativo */
+.header-nav.active {
+    top: 0; 
+}
+
+/* Lista de Navegação */
+.nav-list {
+    display: flex; 
+    gap: 30px; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    height: 100vh;
+}
+
+/* Itens da Navegação */
+.nav-item {
+    font-size: 64px; 
+    font-weight: 400; 
+    list-style: none; 
+}
+
+/* Links dos Itens */
+.nav-item-link {
+    text-decoration: none;
+    color: #000; 
+}
+
+/* Efeito Hover nos Links */
+.nav-item-link:hover {
+    color: #060606;
+    transition: 0.5s;
+}
+
+/* Links Gerais no Header */
+.header-link {
+    color: #666; 
+}
+
+/* Contêiner do menu hamburguer */
+.menu-container {
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    position: fixed;
+    top: 0;
+    z-index: 4;
+}
+
+/* Estilo do ícone de hambúrguer */
+.menu {
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    background: transparent;
+    cursor: pointer;
+    display: block;
+    margin: 2vh;
+}
+
+/* Input para ativar o menu hamburguer */
+.menu input {
+    display: none;
+}
+
+/* Estilo das linhas do ícone de hambúrguer */
+.menu span {
+    display: block;
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background: #000;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+/* Primeira linha do ícone de hambúrguer */
+.menu span:nth-of-type(1) {
+    top: 0px;
+    transform-origin: left center;
+}
+
+/* Segunda linha do ícone de hambúrguer */
+.menu span:nth-of-type(2) {
+    top: 50%;
+    transform: translateY(-50%);
+    transform-origin: left center;
+}
+
+/* Terceira linha do ícone de hambúrguer */
+.menu span:nth-of-type(3) {
+    top: 100%;
+    transform-origin: left center;
+    transform: translateY(-50%);
+}
+
+/* Estilo para quando o menu está ativado */
+.menu input:checked ~ span:nth-of-type(1) {
+    top: 0;
+    left: 5px;
+    transform: rotate(405deg);
+}
+
+/* Estilo para a segunda linha do menu ativo */
+.menu input:checked ~ span:nth-of-type(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+/* Estilo para a terceira linha do menu ativo */
+.menu input:checked ~ span:nth-of-type(3) {
+    top: 28px;
+    left: 5px;
+    transform: rotate(-405deg);
+}

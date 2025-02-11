@@ -1,0 +1,42 @@
+.skills-section {
+    overflow: hidden;
+    display: flex;
+    height: 20vh;
+}
+
+.icons-skills {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.875rem; /* 30px */
+    animation: slide 6s linear infinite;
+}
+
+.icons-skills i {
+    font-size: 2rem; /* 32px */
+    border: 1px solid var(--color-border);
+    padding: 0.625rem 1.875rem; /* 10px 30px */
+    border-radius: 0.3125rem; /* 5px */
+    white-space: nowrap;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0); 
+    }
+    100% {
+        transform: translateX(-50%); 
+    }
+}
+
+/* Responsividade */
+@media (max-width: 48rem) { /* 768px */
+    .skills-section {
+        width: 100%;
+        margin-top: -20vh;
+    }
+
+    .icons-skills i {
+        font-size: 1rem; /* 12.8px */
+    }
+}
